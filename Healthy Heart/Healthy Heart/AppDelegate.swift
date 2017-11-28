@@ -9,14 +9,19 @@
 import UIKit
 import CoreData
 import UserNotifications
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+   
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        //Inicialización de Firebase
+        FirebaseApp.configure()
         
         //Notificaciones
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge,  .sound]) {(accepted, error) in

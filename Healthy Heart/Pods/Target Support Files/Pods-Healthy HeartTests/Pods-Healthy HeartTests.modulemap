@@ -1,0 +1,6 @@
+framework module Pods_Healthy_HeartTests {
+  umbrella header "Pods-Healthy HeartTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
