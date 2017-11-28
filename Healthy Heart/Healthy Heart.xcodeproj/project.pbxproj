@@ -56,6 +56,7 @@
 		1043C7D81FCD13E300D5E0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1043C7E61FCD142000D5E0E3 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		1043C7E81FCD1D3F00D5E0E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Otros/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		10E863331FCD2EFA00127254 /* Healthy Heart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Healthy Heart.entitlements"; sourceTree = "<group>"; };
 		59616FCA77C3416544796D8D /* Pods_Healthy_Heart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthy_Heart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E8EB1960CD7B3B686358D5 /* Pods-Healthy HeartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthy HeartUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Healthy HeartUITests/Pods-Healthy HeartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2F830CBD2450969EE7C236A /* Pods-Healthy Heart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthy Heart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Healthy Heart/Pods-Healthy Heart.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 		1043C7B21FCD13E200D5E0E3 /* Healthy Heart */ = {
 			isa = PBXGroup;
 			children = (
+				10E863331FCD2EFA00127254 /* Healthy Heart.entitlements */,
 				1043C7BD1FCD13E300D5E0E3 /* Assets.xcassets */,
 				1043C7E51FCD140100D5E0E3 /* Autentication */,
 				1043C7E41FCD13F800D5E0E3 /* Functions */,
@@ -268,6 +270,11 @@
 					1043C7AF1FCD13E200D5E0E3 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					1043C7C61FCD13E300D5E0E3 = {
 						CreatedOnToolsVersion = 9.1;
@@ -656,6 +663,7 @@
 			baseConfigurationReference = ECE6E5BA72DDFD5D834FA7C6 /* Pods-Healthy Heart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Healthy Heart/Healthy Heart.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQZRSJ2QMT;
 				INFOPLIST_FILE = "Healthy Heart/Info.plist";
@@ -672,6 +680,7 @@
 			baseConfigurationReference = B2F830CBD2450969EE7C236A /* Pods-Healthy Heart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Healthy Heart/Healthy Heart.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQZRSJ2QMT;
 				INFOPLIST_FILE = "Healthy Heart/Info.plist";
