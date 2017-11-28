@@ -81,10 +81,10 @@
 		1043C7A71FCD13E200D5E0E3 = {
 			isa = PBXGroup;
 			children = (
-				1043C7B21FCD13E200D5E0E3 /* Healthy Heart */,
 				1043C7CA1FCD13E300D5E0E3 /* Healthy HeartTests */,
 				1043C7D51FCD13E300D5E0E3 /* Healthy HeartUITests */,
 				1043C7B11FCD13E200D5E0E3 /* Products */,
+				1043C7B21FCD13E200D5E0E3 /* Healthy Heart */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +101,12 @@
 		1043C7B21FCD13E200D5E0E3 /* Healthy Heart */ = {
 			isa = PBXGroup;
 			children = (
+				1043C7BD1FCD13E300D5E0E3 /* Assets.xcassets */,
 				1043C7E51FCD140100D5E0E3 /* Autentication */,
 				1043C7E41FCD13F800D5E0E3 /* Functions */,
 				1043C7B31FCD13E200D5E0E3 /* AppDelegate.swift */,
 				1043C7B51FCD13E200D5E0E3 /* ViewController.swift */,
 				1043C7B71FCD13E200D5E0E3 /* Main.storyboard */,
-				1043C7BD1FCD13E300D5E0E3 /* Assets.xcassets */,
 				1043C7BF1FCD13E300D5E0E3 /* LaunchScreen.storyboard */,
 				1043C7C21FCD13E300D5E0E3 /* Info.plist */,
 				1043C7BA1FCD13E300D5E0E3 /* Healthy_Heart.xcdatamodeld */,

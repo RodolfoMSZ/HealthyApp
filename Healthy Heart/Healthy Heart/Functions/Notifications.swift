@@ -16,9 +16,9 @@ func estado1(){
     
     // Horario
     var dateComponents = DateComponents()
-    dateComponents.hour = 21
-    dateComponents.minute = 56
-    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+    dateComponents.hour = 04
+    dateComponents.minute = 26
+    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
     
     // Request
     let request = UNNotificationRequest(identifier: "EstadoQ", content: content, trigger: trigger)
@@ -42,9 +42,9 @@ func recordatorio1(){
     
     // Horario
     var dateComponents = DateComponents()
-    dateComponents.hour = 21
-    dateComponents.minute = 58
-    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+    dateComponents.hour = 05
+    dateComponents.minute = 26
+    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
     
     // Request
     let request = UNNotificationRequest(identifier: "Record1", content: content, trigger: trigger)
@@ -68,9 +68,9 @@ func notaI1(){
     
     // Horario
     var dateComponents = DateComponents()
-    dateComponents.hour = 21
-    dateComponents.minute = 57
-    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+    dateComponents.hour = 06
+    dateComponents.minute = 26
+    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
     
     // Request
     let request = UNNotificationRequest(identifier: "Nota1", content: content, trigger: trigger)
@@ -93,9 +93,9 @@ func reto1(){
     
     // Horario
     var dateComponents = DateComponents()
-    dateComponents.hour = 21
-    dateComponents.minute = 59
-    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+    dateComponents.hour = 07
+    dateComponents.minute = 26
+    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
     
     // Request
     let request = UNNotificationRequest(identifier: "Reto1", content: content, trigger: trigger)
