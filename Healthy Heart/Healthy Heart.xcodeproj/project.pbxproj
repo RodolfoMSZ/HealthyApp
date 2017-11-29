@@ -17,6 +17,10 @@
 		1043C7D71FCD13E300D5E0E3 /* Healthy_HeartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1043C7D61FCD13E300D5E0E3 /* Healthy_HeartUITests.swift */; };
 		1043C7E71FCD142000D5E0E3 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1043C7E61FCD142000D5E0E3 /* Notifications.swift */; };
 		1043C7E91FCD1D3F00D5E0E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1043C7E81FCD1D3F00D5E0E3 /* GoogleService-Info.plist */; };
+		10BD56F31FCE0B9100702F6D /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD56F21FCE0B9100702F6D /* Notes.swift */; };
+		10BD56F51FCE1C8C00702F6D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BD56F41FCE1C8C00702F6D /* MapKit.framework */; };
+		10BD56F91FCE619900702F6D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BD56F81FCE619800702F6D /* HealthKit.framework */; };
+		10BD56FB1FCE774000702F6D /* MapsF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BD56FA1FCE773F00702F6D /* MapsF.swift */; };
 		1E84CFA8EC22BB3811D1C0F7 /* Pods_Healthy_HeartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE560B24307EAA8F65E1BF2 /* Pods_Healthy_HeartTests.framework */; };
 		7D504985E59045E06E03B59A /* Pods_Healthy_Heart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59616FCA77C3416544796D8D /* Pods_Healthy_Heart.framework */; };
 		86BDC022AF59A657E2108ADC /* Pods_Healthy_HeartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B4B6606A414EB70DC6F0DB /* Pods_Healthy_HeartUITests.framework */; };
@@ -56,6 +60,10 @@
 		1043C7D81FCD13E300D5E0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1043C7E61FCD142000D5E0E3 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		1043C7E81FCD1D3F00D5E0E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Otros/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		10BD56F21FCE0B9100702F6D /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		10BD56F41FCE1C8C00702F6D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		10BD56F81FCE619800702F6D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		10BD56FA1FCE773F00702F6D /* MapsF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsF.swift; sourceTree = "<group>"; };
 		10E863331FCD2EFA00127254 /* Healthy Heart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Healthy Heart.entitlements"; sourceTree = "<group>"; };
 		59616FCA77C3416544796D8D /* Pods_Healthy_Heart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthy_Heart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E8EB1960CD7B3B686358D5 /* Pods-Healthy HeartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthy HeartUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Healthy HeartUITests/Pods-Healthy HeartUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BD56F91FCE619900702F6D /* HealthKit.framework in Frameworks */,
+				10BD56F51FCE1C8C00702F6D /* MapKit.framework in Frameworks */,
 				7D504985E59045E06E03B59A /* Pods_Healthy_Heart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,8 +133,10 @@
 			children = (
 				10E863331FCD2EFA00127254 /* Healthy Heart.entitlements */,
 				1043C7BD1FCD13E300D5E0E3 /* Assets.xcassets */,
-				1043C7E51FCD140100D5E0E3 /* Autentication */,
+				10BD56F11FCE0B5500702F6D /* Others */,
 				1043C7E41FCD13F800D5E0E3 /* Functions */,
+				1043C7E51FCD140100D5E0E3 /* Autentication */,
+				10BD56F61FCE3CFA00702F6D /* Maps */,
 				1043C7B31FCD13E200D5E0E3 /* AppDelegate.swift */,
 				1043C7B51FCD13E200D5E0E3 /* ViewController.swift */,
 				1043C7B71FCD13E200D5E0E3 /* Main.storyboard */,
@@ -158,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				1043C7E61FCD142000D5E0E3 /* Notifications.swift */,
+				10BD56FA1FCE773F00702F6D /* MapsF.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -167,6 +180,29 @@
 			children = (
 			);
 			path = Autentication;
+			sourceTree = "<group>";
+		};
+		10BD56F11FCE0B5500702F6D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				10BD56F21FCE0B9100702F6D /* Notes.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		10BD56F61FCE3CFA00702F6D /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				10BD56F71FCE3DA900702F6D /* Controllers */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		10BD56F71FCE3DA900702F6D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		59B43B92FA66ED5351475262 /* Pods */ = {
@@ -185,6 +221,8 @@
 		8D3F186DE1E18FA444DB1FC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10BD56F81FCE619800702F6D /* HealthKit.framework */,
+				10BD56F41FCE1C8C00702F6D /* MapKit.framework */,
 				59616FCA77C3416544796D8D /* Pods_Healthy_Heart.framework */,
 				CCE560B24307EAA8F65E1BF2 /* Pods_Healthy_HeartTests.framework */,
 				D7B4B6606A414EB70DC6F0DB /* Pods_Healthy_HeartUITests.framework */,
@@ -271,7 +309,13 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
 						};
@@ -494,7 +538,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1043C7E71FCD142000D5E0E3 /* Notifications.swift in Sources */,
+				10BD56F31FCE0B9100702F6D /* Notes.swift in Sources */,
 				1043C7BC1FCD13E300D5E0E3 /* Healthy_Heart.xcdatamodeld in Sources */,
+				10BD56FB1FCE774000702F6D /* MapsF.swift in Sources */,
 				1043C7B61FCD13E200D5E0E3 /* ViewController.swift in Sources */,
 				1043C7B41FCD13E200D5E0E3 /* AppDelegate.swift in Sources */,
 			);
